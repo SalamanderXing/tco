@@ -1,4 +1,4 @@
-const recursive = (func) => function (...args){
+const tco = (func) => function (...args){
     const self = (...nextArgs) => {
         args = nextArgs;
     } 
@@ -8,3 +8,5 @@ const recursive = (func) => function (...args){
     }
     return result
 }
+
+export default tco
